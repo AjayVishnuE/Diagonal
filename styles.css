@@ -1,4 +1,4 @@
-@keyframes growhorizontalfull{
+@keyframes growverticalfull{
     0% {
       height:0;
       top:0px;
@@ -10,6 +10,18 @@
     }
 }    
 
+@keyframes growhorizontalfull{
+    0% {
+      width:0;
+      left:0px;
+    }
+    100% {
+      width:100%;
+      left:0;
+     
+    }
+}  
+
 #line1 /* LEFT FULL */ 
 {
     width: 2px;
@@ -17,8 +29,8 @@
     background: black;
     position: absolute;
     display: block;
-    animation: growhorizontalfull 2s linear 1;
-    -webkit-animation:  growhorizontalfull 2s linear 1;
+    animation: growverticalfull 2s linear 1;
+    -webkit-animation:  growverticalfull 2s linear 1;
     left:20%;
     top: 0;
 }
@@ -30,24 +42,11 @@
     background: black;
     position: absolute;
     display: block;
-    animation: growhorizontalfull 2s linear 1;
-    -webkit-animation:  growhorizontalfull 2s linear 1;
+    animation: growverticalfull 2s linear 1;
+    -webkit-animation:  growverticalfull 2s linear 1;
     right:20%;
     top: 0%;
 }
-
-
-@keyframes growverticalfull{
-    0% {
-      width:0;
-      left:0px;
-    }
-    100% {
-      widtht:100%;
-      left:0;
-     
-    }
-}  
 
 #line3 /* TOP FULL */
 { 
@@ -56,8 +55,8 @@
     background: black;
     position: absolute;
     display: block;
-    animation: growverticalfull 2s linear 1;
-    -webkit-animation:  growverticalfull 2s linear 1;
+    animation: growhorizontalfull 2s linear 1;
+    -webkit-animation:  growhorizontalfull 2s linear 1;
     left:0;
     top: 10%;
 }
@@ -69,8 +68,8 @@
     background: black;
     position: absolute;
     display: block;
-    animation: growverticalfull 2s linear 1;
-    -webkit-animation:  growverticalfull 2s linear 1;
+    animation: growhorizontalfull 2s linear 1;
+    -webkit-animation:  growhorizontalfull 2s linear 1;
     bottom:10%;
     left: 0;
 }
@@ -78,24 +77,12 @@
 /* 4 Full length lines Done*/
 /* 6 20% length lines*/
 
-@keyframes grow-20{
-    0% {
-        width:0;
-        left:0px;
-      }
-      100% {
-        width:100%;
-        left:0;
-       
-      }
-} 
-
-.line-20{
+.line-draw-hor{
     background: black;
     position: relative;
     display: block;
-    animation: grow-20 2s linear 1;
-    -webkit-animation:  grow-20 2s linear 1;
+    animation: growhorizontalfull 2s linear 1;
+    -webkit-animation:  growhorizontalfull 2s linear 1;
 }
 
 #line-left-1 
@@ -128,7 +115,34 @@
     top: 66%;
 }
 
+/* 6 20% length lines DONE*/
+
+/* 2 60% length lines*/
+
+#center-line-1{
+    background: black;
+    position: relative;
+    animation: growhorizontalfull 2s linear 1;
+    -webkit-animation:  growhorizontalfull 2s linear 1;
+    width: 100%;
+    height:2px;
+    top: 33%;
+}
+
+#center-line-2{
+    background: black;
+    position: relative;
+    animation: growhorizontalfull 2s linear 1;
+    -webkit-animation:  growhorizontalfull 2s linear 1;
+    width: 100%;
+    height:2px;
+    top: 66%;
+}
+
+/* 2 60% length lines DONE*/
+
 /* Center piece */
+
 
 @keyframes scale-in-out{
     0%{
@@ -153,18 +167,16 @@
     }
 }
 
-.scale-in-center{
-    -webkit-animation:scale-in-center 4s cubic-bezier(.25,.46,.45,.94) both;
-    animation:scale-in-center 4s cubic-bezier(.25,.46,.45,.94) both
-}
-
 #center-image-holder{
     position: absolute;
-    background: transparent;
+    z-index: 10;
     top:10%;
     left:20%;
-    height: 80%;
     width: 60%;
+    height: 80%;
+    display: block;
+    position: absolute;
+    background: transparent;
     background-image: url(./logo.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -172,6 +184,29 @@
     animation:scale-in-out 2s ease-out forwards;
 }
 
+#center-appear-downarrow{
+    display: none;
+    position: absolute;
+    top:10%;
+    left:20%;
+    width: 60%;
+    height: 80%;
+}
+
+#center-appear-work{
+    display: none;
+
+}
+
+#center-appear-about{
+    display: none;
+
+}
+
+#center-appear-downarrow:target{
+    display: block;
+
+}
 /* Center piece done */
 
 /* Left and right side sections */
