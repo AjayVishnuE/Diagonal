@@ -1,3 +1,7 @@
+a{
+    text-decoration: none;
+    color: rgb(0, 26, 255);
+}
 @keyframes growverticalfull{
     0% {
       height:0;
@@ -33,6 +37,7 @@
     -webkit-animation:  growverticalfull 2s linear 1;
     left:20%;
     top: 0;
+    z-index: 10;
 }
 
 #line2 /* RIGHT FULL */
@@ -46,6 +51,7 @@
     -webkit-animation:  growverticalfull 2s linear 1;
     right:20%;
     top: 0%;
+    z-index: 10;
 }
 
 #line3 /* TOP FULL */
@@ -59,6 +65,7 @@
     -webkit-animation:  growhorizontalfull 2s linear 1;
     left:0;
     top: 10%;
+    z-index: 10;
 }
 
 #line4  /* BOTTOM FULL*/
@@ -72,6 +79,7 @@
     -webkit-animation:  growhorizontalfull 2s linear 1;
     bottom:10%;
     left: 0;
+    z-index: 10;
 }
 
 /* 4 Full length lines Done*/
@@ -83,6 +91,7 @@
     display: block;
     animation: growhorizontalfull 2s linear 1;
     -webkit-animation:  growhorizontalfull 2s linear 1;
+    z-index: 10;
 }
 
 #line-left-1 
@@ -128,6 +137,7 @@
     width: 100%;
     height:2px;
     top: 33%;
+    z-index: 10;
 }
 
 #center-line-2{
@@ -139,6 +149,8 @@
     width: 100%;
     height:2px;
     top: 66%;
+    z-index: 10;
+
 }
 
 /* 2 60% length lines DONE*/
@@ -171,6 +183,7 @@
 
 #center-image-holder{
     position: absolute;
+    background-color: white;
     top:10%;
     left:20%;
     width: 60%;
@@ -179,11 +192,12 @@
     align-items: center;
     justify-content: center;
     -webkit-animation:scale-in-out 2s ease-out forwards;
-    animation:scale-in-out 2s ease-out forwards;
+    animation:scale-in-out 2s ease-out forwards;    
 }
 
 #center-appear-downarrow{
     display: none;
+    background-color: white;
     position: absolute;
     top:10%;
     left:20%;
@@ -199,23 +213,74 @@
     justify-content: center;
     align-items: center;
 }
-    
+
+#center-appear-home{
+    display: none;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    top:10%;
+    left:20%;
+    width: 60%;
+    height: 80%;
+}
 
 #center-appear-work{
     display: none;
-
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    top:10%;
+    left:20%;
+    width: 60%;
+    height: 80%;
 }
 
 #center-appear-about{
     display: none;
-
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    top:10%;
+    left:20%;
+    width: 60%;
+    height: 80%;
 }
 
-#center-appear-downarrow:target{
-    display: block;
-
+#center-appear-tech{
+    display: none;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    top:10%;
+    left:20%;
+    width: 60%;
+    height: 80%;
 }
-/* Center piece done */
+
+#center-appear-careers{
+    display: none;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    top:10%;
+    left:20%;
+    width: 60%;
+    height: 80%;
+}
+
+#center-appear-contact{
+    display: none;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    top:10%;
+    left:20%;
+    width: 60%;
+    height: 80%;
+}
+
+/* Center pieces done */
 
 /* Left and right side sections */
 #left {
@@ -249,9 +314,9 @@
 #arrow-holder{
     position: absolute;
     bottom: 20px;
-    left: 50%;
-    width: 50px;
-    height: 50px;
+    left: 48.5%;
+    width: 5%;
+    height: 5%;
     display: flex;
     object-fit: cover;
 
