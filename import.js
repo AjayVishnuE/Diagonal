@@ -16,6 +16,12 @@ function arrowClicked() {
 function homeClicked(){
     document.getElementById('center-image-holder').style.display == 'flex';
     document.getElementById('center-appear-downarrow').style.display = 'none';
+    document.getElementById('center-image-holder').style.display == 'none';
+    document.getElementById('center-appear-work').style.display = 'none';
+    document.getElementById('center-appear-about').style.display = 'none';
+    document.getElementById('center-appear-tech').style.display = 'none';
+    document.getElementById('center-appear-careers').style.display = 'none';
+    document.getElementById('center-appear-contact').style.display = 'none';
 }
 
 function workClicked(){
